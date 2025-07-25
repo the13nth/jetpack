@@ -5,14 +5,15 @@ plugins {
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
     alias(libs.plugins.jetbrains.kotlin.serialization)
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.meticha.jetpackboilerplate"
+    namespace = "com.example.rotiie"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.meticha.jetpackboilerplate"
+        applicationId = "com.example.rotiie"
         minSdk = 31
         targetSdk = 36
         versionCode = 1
@@ -79,6 +80,12 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
+
+    // Firebase dependencies
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+    implementation("com.google.firebase:firebase-analytics-ktx")
 
     testImplementation(libs.junit)
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")

@@ -1,0 +1,39 @@
+{
+    "project_info": {
+      "project_number": "91612168151",
+      "project_id": "rotiie",
+      "storage_bucket": "rotiie.firebasestorage.app"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:91612168151:android:b996e3f941a5999556d592",
+          "android_client_info": {
+            "package_name": "com.example.rotiie"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "91612168151-81gffu6noguvnkbn5m6ojb3n6u6iii8e.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyDJdoR5GbMX86ml7PqpkXEeTfHb_9A8UyA"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "91612168151-81gffu6noguvnkbn5m6ojb3n6u6iii8e.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
