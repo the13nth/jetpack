@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.meticha.jetpackboilerplate.navigation.AppNavigation
+import com.meticha.jetpackboilerplate.launcher.ui.LauncherApp
 import com.meticha.jetpackboilerplate.ui.theme.CallBudyTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -15,7 +15,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CallBudyTheme {
-                AppNavigation()
+                LauncherApp()
             }
         }
     }
