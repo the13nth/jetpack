@@ -1,6 +1,7 @@
 package com.meticha.jetpackboilerplate.launcher.ui.navigation
 
 import kotlinx.serialization.Serializable
+import com.meticha.jetpackboilerplate.launcher.ui.screens.PredictionData
 
 @Serializable
 sealed class LauncherDestination {
@@ -14,5 +15,11 @@ sealed class LauncherDestination {
     data object Settings : LauncherDestination()
     
     @Serializable
-    data class IntentionDetail(val intentionId: String) : LauncherDestination()
+data class IntentionDetail(val intentionId: String) : LauncherDestination()
+    
+@Serializable
+data class PredictionDetail(val prediction: PredictionData) : LauncherDestination()
+    
+@Serializable
+data object CreateRoutine : LauncherDestination()
 }
